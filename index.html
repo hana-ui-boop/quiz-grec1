@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Grec Ancien</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<!-- Page d'accueil -->
+<div id="homePage" class="page">
+  <h1>Bienvenue au Quiz de Grec Ancien</h1>
+  <button id="enterBtn">Entrer</button>
+</div>
+
+<!-- Page Quiz -->
+<div id="quizPage" class="page hidden">
+  <div class="controls">
+    <label for="mode">Mode:</label>
+    <select id="mode">
+      <option value="grec-fr">Grec → Français</option>
+      <option value="fr-grec">Français → Grec</option>
+    </select>
+  </div>
+
+  <div id="card" class="card">
+    <div id="word" class="word">Mot</div>
+    <div id="definition" class="definition hidden">Définition</div>
+  </div>
+
+  <div class="buttons">
+    <button id="know">Je sais ✅</button>
+    <button id="dontknow">Je ne sais pas ❌</button>
+  </div>
+
+  <div class="counters">
+    Correct: <span id="correct">0</span> |
+    Faux: <span id="wrong">0</span>
+  </div>
+
+  <button id="showDictBtn">Voir le dictionnaire 📖</button>
+</div>
+
+<!-- Page Dictionnaire -->
+<div id="dictPage" class="page hidden">
+  <h2>Dictionnaire complet</h2>
+  <div id="dictionary"></div>
+  <button id="backQuiz">Retour au quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
