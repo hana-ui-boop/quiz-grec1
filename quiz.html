@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Grec Ancien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Quiz Grec Ancien</h2>
+    <div class="progress">
+      ✅ <span id="correct">0</span> | ❌ <span id="wrong">0</span>
+    </div>
+    <select id="mode">
+      <option value="grec-fr">Grec → Français</option>
+      <option value="fr-grec">Français → Grec</option>
+    </select>
+    <button onclick="location.href='dictionary.html'">Dictionnaire</button>
+  </header>
+
+  <main>
+    <div id="card" class="card">
+      <div id="word"></div>
+      <div id="definition" class="definition"></div>
+    </div>
+    <div class="buttons">
+      <button id="know">Je sais</button>
+      <button id="dontknow">Je ne sais pas</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

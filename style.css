@@ -1,0 +1,44 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0; padding: 0;
+  background: #f0f8ff;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 100vh;
+}
+
+.page { text-align: center; padding: 20px; }
+.hidden { display: none; }
+
+button { padding: 10px 20px; margin: 10px; cursor: pointer; font-size: 1rem; border-radius: 8px; border: none; transition: 0.3s; }
+button:hover { transform: scale(1.05); }
+
+.card {
+  background: #fff; padding: 30px 20px; margin: 20px auto;
+  width: 300px; border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.word { font-weight: bold; }
+.definition { margin-top: 15px; font-size: 1rem; color: #333; }
+
+.correct { border: 3px solid green; animation: starAnim 0.7s ease; }
+.wrong { border: 3px solid red; }
+
+@keyframes starAnim {
+  0% { box-shadow: 0 0 0 yellow; }
+  50% { box-shadow: 0 0 20px yellow; }
+  100% { box-shadow: 0 0 0 yellow; }
+}
+
+/* dictionnaire */
+.category { margin: 20px 0; }
+.category h3 { color: #333; }
+.category ul { list-style: none; padding-left: 0; }
+.category li { background: #e0f7fa; margin: 5px; padding: 8px; border-radius: 5px; }
+
+/* boutons principaux */
+.controls { margin-bottom: 15px; }
+.counters { margin-top: 15px; }
